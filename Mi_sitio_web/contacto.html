@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CECyMagic | Contacto</title>
+
+    <!-- Conecta los estilos compartidos del sitio -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- Encabezado del sitio -->
+    <header class="encabezado">
+        <a class="logo" href="index.html">
+            CECy<span>Magic</span>
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="historia.html">Historia</a>
+            <a href="tradiciones.html">Tradiciones</a>
+            <a href="gastronomia.html">Gastronomía</a>
+            <a href="naturaleza.html">Naturaleza</a>
+            <a href="turismo.html">Turismo</a>
+            <a href="galeria.html">Galería</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contacto-contenedor">
+
+        <!-- Título e introducción -->
+        <section class="contacto-portada">
+            <p class="contacto-etiqueta">CECyMagic Valle de Bravo</p>
+
+            <h1>Comparte tus ideas</h1>
+
+            <p>
+                Ayúdanos a conservar y difundir la historia,
+                las tradiciones, la gastronomía y la riqueza
+                natural de nuestras localidades.
+            </p>
+        </section>
+
+        <!-- Formulario -->
+        <section class="contacto-tarjeta">
+
+            <h2>Formulario de contacto</h2>
+
+            <p>
+                Completa los campos para compartir una
+                sugerencia con nuestro proyecto educativo.
+            </p>
+
+            <form id="formularioContacto" action="guardar.php" method="POST">
+
+                <div class="campo-contacto">
+                    <label for="nombre">Nombre completo</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required
+                        minlength="3">
+                </div>
+
+                <div class="campo-contacto">
+                    <label for="correo">Correo electrónico</label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        required>
+                </div>
+
+                <div class="campo-contacto">
+                    <label for="tema">Tema de tu sugerencia</label>
+
+                    <select id="tema" name="tema" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="Historia">Historia</option>
+                        <option value="Tradiciones">Tradiciones</option>
+                        <option value="Gastronomia">Gastronomía</option>
+                        <option value="Naturaleza">Naturaleza</option>
+                        <option value="Turismo">Atractivos turísticos</option>
+                        <option value="Otro">Otro tema</option>
+                    </select>
+                </div>
+
+                <div class="campo-contacto">
+                    <label for="mensaje">Tu sugerencia o comentario</label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribe aquí tu sugerencia..."
+                        required
+                        minlength="10"></textarea>
+                </div>
+
+                <button type="submit" class="boton-contacto">
+                    Enviar mensaje
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-contacto">
+        <p>
+            Proyecto educativo | CECyTEM Plantel Valle de Bravo
+        </p>
+        <p>CECyMagic | Cultura, historia e identidad local</p>
+    </footer>
+
+</body>
+</html>

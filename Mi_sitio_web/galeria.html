@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CECyMagic | Galería de nuestra localidad</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y MENÚ -->
+    <header class="encabezado">
+        <a href="index.html" class="logo">
+            CECy<span>Magic</span>
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="historia.html">Historia</a>
+            <a href="tradiciones.html">Tradiciones</a>
+            <a href="gastronomia.html">Gastronomía</a>
+            <a href="naturaleza.html">Naturaleza</a>
+            <a href="turismo.html">Turismo</a>
+            <a href="galeria.html" class="activo">Galería</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PORTADA DE LA GALERÍA -->
+        <section class="galeria-portada">
+            <div class="galeria-portada-contenido">
+                <span class="galeria-etiqueta">
+                    CECyMagic · Valle de Bravo
+                </span>
+
+                <h1>Un recorrido por nuestra localidad</h1>
+
+                <p>
+                    Descubre los paisajes, las costumbres, los sabores
+                    y los lugares que hacen especial a nuestra comunidad.
+                    Cada fotografía cuenta una parte de nuestra historia.
+                </p>
+
+                <a href="#fotografias" class="galeria-boton">
+                    Explorar galería
+                </a>
+            </div>
+        </section>
+
+        <!-- INTRODUCCIÓN -->
+        <section class="galeria-introduccion">
+            <span class="galeria-etiqueta">Nuestras raíces</span>
+            <h2>Los recuerdos de nuestra comunidad</h2>
+
+            <p>
+                Esta galería reúne imágenes de los lugares que habitamos,
+                las tradiciones que compartimos y la riqueza natural
+                y cultural de nuestra localidad. Conocerla es una forma
+                de valorar nuestra identidad y conservar nuestro patrimonio.
+            </p>
+        </section>
+
+        <!-- GALERÍA DE FOTOGRAFÍAS -->
+        <section class="galeria-seccion" id="fotografias">
+
+            <div class="galeria-titulo">
+                <div>
+                    <span class="galeria-etiqueta">Momentos y lugares</span>
+                    <h2>Galería fotográfica</h2>
+                </div>
+
+                <p>Una mirada a lo que nos hace únicos.</p>
+            </div>
+
+            <div class="galeria-grid">
+
+                <article class="galeria-item galeria-grande">
+                    <img src="NuVB1.jpg"
+                        alt="Plaza principal de la localidad">
+                    <div class="galeria-pie">
+                        <span>01 · Lugares</span>
+                        <h3>Nuestros espacios</h3>
+                        <p>Lugares donde convivimos y compartimos.</p>
+                    </div>
+                </article>
+
+                <article class="galeria-item">
+                    <img src="peña.jpg"
+                        alt="Paisaje natural de la localidad">
+                    <div class="galeria-pie">
+                        <span>02 · Naturaleza</span>
+                        <h3>Riqueza natural</h3>
+                        <p>La belleza de nuestro entorno.</p>
+                    </div>
+                </article>
+
+                <article class="galeria-item">
+                    <img src="tradiciones.jpg"
+                        alt="Celebración de una tradición local">
+                    <div class="galeria-pie">
+                        <span>03 · Cultura</span>
+                        <h3>Nuestras tradiciones</h3>
+                        <p>Costumbres que pasan de generación en generación.</p>
+                    </div>
+                </article>
+
+                <article class="galeria-item">
+                    <img src="portada.jpg"
+                        alt="Platillo representativo de la localidad">
+                    <div class="galeria-pie">
+                        <span>04 · Gastronomía</span>
+                        <h3>Sabores de casa</h3>
+                        <p>Recetas y sabores de nuestra comunidad.</p>
+                    </div>
+                </article>
+
+                <article class="galeria-item">
+                    <img src="GenteVB4.jpg"
+                        alt="Personas participando en una actividad comunitaria">
+                    <div class="galeria-pie">
+                        <span>05 · Comunidad</span>
+                        <h3>Nuestra gente</h3>
+                        <p>Personas que dan vida a la localidad.</p>
+                    </div>
+                </article>
+
+                <article class="galeria-item">
+                    <img src="portada huellas.jpg"
+                        alt="Construcciones tradicionales de la localidad">
+                    <div class="galeria-pie">
+                        <span>06 · Patrimonio</span>
+                        <h3>Huellas del pasado</h3>
+                        <p>Espacios que conservan nuestra memoria.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- GALERÍA DE VIDEOS -->
+        <section class="galeria-videos">
+            <div class="galeria-introduccion">
+                <span class="galeria-etiqueta">Historias en movimiento</span>
+                <h2>Conoce nuestra localidad en video</h2>
+                <p>
+                    Videos para descubrir los paisajes, las actividades
+                    y las historias que distinguen a nuestra comunidad.
+                </p>
+            </div>
+
+            <div class="galeria-videos-grid">
+
+                <article class="galeria-video-tarjeta">
+                    <video controls preload="metadata"
+                        poster="imagenes/galeria/paisaje.jpg">
+                        <source src="video fut.mp4"
+                                type="video/mp4">
+                        Tu navegador no puede reproducir este video.
+                    </video>
+
+                    <div class="galeria-video-texto">
+                        <span>RECORRIDO</span>
+                        <h3>Un paseo por nuestra localidad</h3>
+                        <p>Descubre algunos de nuestros lugares favoritos.</p>
+                    </div>
+                </article>
+
+                <article class="galeria-video-tarjeta">
+                    <video controls preload="metadata"
+                        poster="imagenes/galeria/tradiciones.jpg">
+                        <source src="WhatsApp Video tradiciones.mp4"
+                                type="video/mp4">
+                        Tu navegador no puede reproducir este video.
+                    </video>
+
+                    <div class="galeria-video-texto">
+                        <span>IDENTIDAD CULTURAL</span>
+                        <h3>Tradiciones que nos unen</h3>
+                        <p>Conoce las costumbres de nuestra comunidad.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- MENSAJE FINAL -->
+        <section class="galeria-mensaje">
+            <span class="galeria-etiqueta">Orgullo por nuestras raíces</span>
+            <h2>Conocer nuestra localidad es valorar quiénes somos.</h2>
+            <p>
+                CECyMagic invita a estudiantes y habitantes a compartir
+                fotografías, recuerdos e historias para preservar
+                la identidad cultural de nuestras comunidades.
+            </p>
+            <a href="contacto.html" class="galeria-boton">
+                Comparte tu historia
+            </a>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <h3>CECyMagic</h3>
+        <p>Conociendo, compartiendo y preservando nuestras raíces.</p>
+        <p>Proyecto educativo · CECYTEM Plantel Valle de Bravo</p>
+    </footer>
+
+</body>
+</html>
+
